@@ -1,0 +1,162 @@
+/* Import */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+@font-face {
+  font-family: 'Noto';
+  src: url(NotoSansCJKtc-DemiLight.otf);
+}
+
+@font-face {
+  font-family: 'Noto Bold';
+  src: url(NotoSansCJKtc-Medium.otf);
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Noto', sans-serif;
+}
+
+
+/* General */
+
+body {
+  background-color: #eceff1;
+  font-family: 'Noto', 'Roboto', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+
+/* Class */
+
+.fa-facebook {
+  color: #3b5998;
+  padding: .3em .5em .3em;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.container {
+  width: 80%;
+}
+
+
+/* Sections */
+
+/* Infobar */
+
+#infobar {
+  background-color: #fff;
+  max-width: 80%;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+}
+
+#infobar h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+#infobar p {
+  margin: 0;
+  display: inline-block;
+}
+
+#infobar #brand {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+#infobar .navbox {
+  display: inline-block;
+  padding: 0 1em 0 1em;
+  color: #777;
+  border-left: 1px solid #ddd;
+}
+
+#infobar #socials {
+  margin-top: -1em;
+  margin-bottom: auto;
+}
+
+#infobar #telephone {
+  color: white;
+  padding: .7em 1em .7em;
+  border-radius: 30px;
+}
+
+#infobar #telephone p {
+  font-size: 1.2em;
+}
+
+/* Navbar */
+
+#navbar {
+  margin-top: 3em;
+  text-transform: uppercase;
+  padding: 1em;
+  background-color: white;
+}
+
+#booknow {
+  color: white;
+}
+
+/* Main Content */
+
+.main-content {
+  background-color: white;
+  margin-top: 3em;
+  padding: 1em;
+}
+
+.photo {
+  display: block;
+  background-color: white;
+  padding: 3em 0 3em;
+  border: 3px solid #ddd;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.intro {
+  padding: 7em 0 7em;
+  border: 3px solid #ddd;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.service-box {
+  text-align: center;
+}
+
+.service {
+  border: 3px solid #ddd;
+  padding: 3em 0 3em;
+  display: block;
+}
+
+.testimonials {
+  border: 3px solid #ddd;
+  padding: 3em 0 3em;
+  display: block;
+}
+
+
+/* Footer */
+
+.page-footer {
+  margin-top: 5em;
+}
