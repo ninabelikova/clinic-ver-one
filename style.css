@@ -119,23 +119,29 @@ p {
 .main-content {
   background-color: white;
   margin-top: 3em;
-  padding: 1em;
+  padding: 2em 4em 2em 4em;
 }
 
 .photo {
   display: block;
   background-color: white;
-  padding: 3em 0 3em;
-  border: 3px solid #ddd;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
+.photo img {
+  margin: 0 auto;
+}
+
 .intro {
-  padding: 7em 0 7em;
-  border: 3px solid #ddd;
+  padding: 2em 0 2em;
   margin-top: 1em;
   margin-bottom: 1em;
+  line-height: 2.2em;
+}
+
+.intro p {
+  margin-top: 2em;
 }
 
 .service-box {
