@@ -1,4 +1,4 @@
-<html>
+<html ng-app="app">
 <head>
   <title>藝林整形外科</title>
   <meta charset="utf-8">
@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
   <script src="app.js"></script>
 </head>
-<body>
+<body ng-controller="PageController as page">
 
   <!-- infobar -->
   <header id="infobar" class="z-depth-2">
@@ -62,13 +63,13 @@
 
       <div class="col s3">
         <div class="collection z-depth-1" id="navbar">
-          <a href="#!" class="collection-item">首頁</a>
-          <a href="#!" class="collection-item">關於</a>
-          <a href="#!" class="collection-item">服務</a>
-          <a href="#!" class="collection-item">論壇</a>
-          <a href="#!" class="collection-item">Q&A</a>
-          <a href="#!" class="collection-item">地點</a>
-          <a href="#!" class="collection-item light-blue darken-3" id="booknow">預約</a>
+          <a href="#!" ng-click="page=1" class="collection-item">首頁</a>
+          <a href="#!" ng-click="page=2" class="collection-item">認識藝林</a>
+          <a href="#!" class="collection-item">手術特色</a>
+          <a href="#!" class="collection-item">諮詢與討論</a>
+          <a href="#!" class="collection-item">常見問題</a>
+          <a href="#!" class="collection-item">交通</a>
+          <a href="#!" class="collection-item light-blue darken-3" id="booknow">線上預約</a>
         </div>
       </div>
 
@@ -77,31 +78,9 @@
       <div class="col s9">
         <div class="main-content z-depth-1">
 
-          <div class="intro">
-            <h4 class="valign center-align">Introduction</h4>
-          </div>
+          <home ng-show="page===1"></home>
 
-          <div class="photo valign-wrapper">
-            <h4 class="valign center-align">診所照片？</h4>
-          </div>
-
-          <div class="row service-box">
-            <div class="col m4 s12 service">
-              <h4>Service 1</h4>
-            </div>
-            <div class="col m4 s12 service">
-              <h4>Service 2</h4>
-            </div>
-            <div class="col m4 s12 service">
-              <h4>Service 3</h4>
-            </div>
-          </div>
-
-          <div class="testimonials">
-            <h4 class="valign center-align">Testimonials</h4>
-          </div>
-
-
+          <about ng-show="page===2"></about>
 
         </div>
       </div>
