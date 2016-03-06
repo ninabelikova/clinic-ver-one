@@ -17,3 +17,17 @@ app.directive('home', function () {
     templateUrl: 'home.html'
   };
 });
+
+app.directive('questions', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'questions.html'
+  };
+});
+
+app.directive('location', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'location.html'
+  };
+});

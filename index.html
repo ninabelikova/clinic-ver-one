@@ -3,13 +3,16 @@
   <title>藝林整形外科</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
 </head>
+
 <body ng-controller="PageController as page">
 
   <!-- infobar -->
@@ -23,31 +26,27 @@
     </div>
 
     <div class="navbox">
-      <i class="fa fa-home fa-3x"></i>
+      <i class="material-icons md-48">home</i>
       <p>
         台北市羅斯福路<br>三段309號4樓之2
       </p>
     </div>
 
     <div class="navbox">
-      <i class="fa fa-clock-o fa-3x"></i>
+      <i class="material-icons md-48">access_time</i>
       <p>
         週一至週六10AM至8PM<br>
         週日及國定假日休診
       </p>
     </div>
 
-    <div class="navbox" id="socials">
-      <i class="fa fa-facebook fa-2x"></i>
-      <i class="fa fa-twitter fa-2x"></i>
-    </div>
 
     <div class="navbox">
-      <div id="telephone" class=" blue lighten-2">
-        <i class="fa fa-phone fa-2x"></i>
-        <p>
+      <div id="telephone" class="teal lighten-2">
+        <i class="material-icons">phone</i>
+        <span>
           (02) 3365-3196
-        </p>
+        </span>
       </div>
     </div>
 
@@ -61,26 +60,30 @@
 
       <!-- Navbar -->
 
-      <div class="col s3">
+      <div class="col m3">
         <div class="collection z-depth-1" id="navbar">
           <a href="#!" ng-click="page=1" class="collection-item">首頁</a>
           <a href="#!" ng-click="page=2" class="collection-item">認識藝林</a>
           <a href="#!" class="collection-item">手術特色</a>
           <a href="#!" class="collection-item">諮詢與討論</a>
-          <a href="#!" class="collection-item">常見問題</a>
-          <a href="#!" class="collection-item">交通</a>
-          <a href="#!" class="collection-item light-blue darken-3" id="booknow">線上預約</a>
+          <a href="#!" ng-click="page=5" class="collection-item">常見問題</a>
+          <a href="#!" ng-click="page=6" class="collection-item">交通</a>
+          <a href="#!" class="collection-item teal darken-1" id="booknow">線上預約</a>
         </div>
       </div>
 
       <!-- Main Content -->
 
-      <div class="col s9">
+      <div class="col m9">
         <div class="main-content z-depth-1">
 
           <home ng-show="page===1"></home>
 
           <about ng-show="page===2"></about>
+
+          <questions ng-show="page===5"></questions>
+
+          <location ng-show="page===6"></location>
 
         </div>
       </div>
@@ -92,31 +95,13 @@
   <!-- Footer -->
 
   <footer class="page-footer teal lighten-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">footer content</p>
-        </div>
-
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
-
     <div class="footer-copyright">
       <div class="container">
-        © 2016 Copyright Text
+        ©藝林整形外科2016
       </div>
     </div>
   </footer>
+
 
 </body>
 </html>

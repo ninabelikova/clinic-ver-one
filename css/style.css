@@ -32,19 +32,11 @@ h1 {
 
 p {
   font-size: 1.1em;
+  line-height: 2.1em;
 }
 
 
 /* Class */
-
-.fa-facebook {
-  color: #3b5998;
-  padding: .3em .5em .3em;
-}
-
-.fa-twitter {
-  color: #00aced;
-}
 
 .container {
   width: 80%;
@@ -57,7 +49,7 @@ p {
 
 #infobar {
   background-color: #fff;
-  max-width: 80%;
+  max-width: 85%;
   margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +73,7 @@ p {
 
 #infobar .navbox {
   display: inline-block;
-  padding: 0 1em 0 1em;
+  padding: 0 2em 0 2em;
   color: #777;
   border-left: 1px solid #ddd;
 }
@@ -97,8 +89,8 @@ p {
   border-radius: 30px;
 }
 
-#infobar #telephone p {
-  font-size: 1.2em;
+#infobar #telephone span {
+  font-size: 24px;
 }
 
 /* Navbar */
@@ -119,7 +111,7 @@ p {
 .main-content {
   background-color: white;
   margin-top: 3em;
-  padding: 2em 4em 2em 4em;
+  padding: 2em 4.5em 2em 4.5em;
 }
 
 .photo {
@@ -137,7 +129,6 @@ p {
   padding: 2em 0 2em;
   margin-top: 1em;
   margin-bottom: 1em;
-  line-height: 2.2em;
 }
 
 .intro p {
@@ -160,9 +151,53 @@ p {
   display: block;
 }
 
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 2em 0 2em;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  width: 85%;
+}
+
+.question {
+  padding: 1.3em;
+}
+
+.q {
+  padding: .5em;
+  color: white;
+}
+
+.location h5 {
+  padding: .3em;
+}
 
 /* Footer */
 
 .page-footer {
   margin-top: 5em;
 }
+
+
+/* Icons styling *?
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
