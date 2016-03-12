@@ -31,3 +31,10 @@ app.directive('location', function () {
     templateUrl: 'location.html'
   };
 });
+
+app.directive('contact', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'contact.html'
+  };
+});
